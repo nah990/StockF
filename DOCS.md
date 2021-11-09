@@ -19,20 +19,20 @@
 
 __Неавторизованный пользователь__
 
-![Use-case unauth user](docs/images/Ru/use-case_unauth_user.png)
+![Use-case unauth user](docs/Ru/images/use-case_unauth_user.png)
 
 __Авторизованный пользователь__
 
-![Use-case auth user](docs/images/Ru/use-case_auth_user.png)
+![Use-case auth user](docs/Ru/images/use-case_auth_user.png)
 
 __Специалист__
 
-![Use-case specialist](docs/images/Ru/use-case_specialist.png)
+![Use-case specialist](docs/Ru/images/use-case_specialist.png)
 
 __Администратор__
 
-![Use-case admin](docs/images/Ru/use-case_admin.png)
+![Use-case admin](docs/Ru/images/use-case_admin.png)
 
 ## ER-диаграмма сущностей
 
-![ER-диаграмма сущностей](docs/images/Ru/ER-diagram.png)
+![ER-диаграмма сущностей](docs/Ru/images/ER-diagram.png)
