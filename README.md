@@ -8,8 +8,8 @@ Simple web application for aggregating stock forecasts.
 **Clone the sources**
 
 ```
-$ # Get the code
-$ git clone https://github.com/nah990/StockF.git
+# Get the code
+git clone https://github.com/nah990/StockF.git
 ```
 
 <br />
@@ -24,7 +24,7 @@ pip install psycopg2-binary
 ```
 
 ```
-$ pip3 install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 Run setup.py to configure your PostgreSQL integration with Django.
