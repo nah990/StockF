@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'stock',
     'django.db.backends.postgresql',
     'rest_framework',
+    'frontend',
 ]
 
 MIDDLEWARE = [
