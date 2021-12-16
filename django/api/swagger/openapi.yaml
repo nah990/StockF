@@ -1,0 +1,785 @@
+openapi: 3.0.2
+servers:
+  - url: /v2
+info:
+  description: |-
+    Simple web application for aggregating stock forecasts.
+    - [StockF repository](https://github.com/nah990/StockF)
+  version: 1.0.7
+  title: StockF - OpenAPI 3.0
+  contact:
+    email: fire990q@gmail.com
+  license:
+    name: MIT License
+    url: 'https://github.com/nah990/StockF/blob/main/LICENSE'
+tags:
+  - name: StockByDate
+    description: Access to stock data
+  - name: StockInfo
+    description: Access to stock info
+  - name: SourceInfo
+    description: Access to source info of stock forecast
+ 
+ 
+paths:
+  /api/v1/stock:
+    post:
+      tags:
+        - stocks
+      summary: Creates a new stock
+      description: Creates a new stock
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StockByDate'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+
+  /api/v1/stock/{stockId}:
+    get:
+      tags:
+        - stocks
+      summary: Gets single stock 
+      description: Gets a single stock 
+      operationId: getStockById
+      parameters:
+        - name: stockId
+          in: path
+          description: ID of stock to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StockByDate'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+    delete:
+      tags:
+        - stocks
+      summary: Deletes single stock 
+      description: Deletes a single stock 
+      operationId: deleteStockById
+      parameters:
+        - name: stockId
+          in: path
+          description: ID of stock to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StockByDate'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+    patch:
+      tags:
+        - stocks
+      summary: Patch single stock 
+      description: Patch a single stock 
+      operationId: patchStockById
+      parameters:
+        - name: stockId
+          in: path
+          description: ID of stock to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StockByDate'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+                
+  /api/v1/stock-info:
+    post:
+      tags:
+        - stocks-info
+      summary: Creates a new stock-info
+      description: Creates a new stock-info
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StockInfo'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+                
+  /api/v1/stock-info/{stockInfoId}:
+    get:
+      tags:
+        - stocks-info
+      summary: Gets single stock info
+      description: Gets a single stock info 
+      operationId: getStockInfoById
+      parameters:
+        - name: stockInfoId
+          in: path
+          description: ID of stock to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StockByDate'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+    delete:
+      tags:
+        - stocks-info
+      summary: Deletes single stock 
+      description: Deletes a single stock 
+      operationId: deleteStockInfoById
+      parameters:
+        - name: stockInfoId
+          in: path
+          description: ID of stock to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StockByDate'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+    patch:
+      tags:
+        - stocks-info
+      summary: Patch single stock 
+      description: Patch a single stock 
+      operationId: patchStockInfoById
+      parameters:
+        - name: stockInfoId
+          in: path
+          description: ID of stock to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StockByDate'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+  /api/v1/source:
+    post:
+      tags:
+        - source
+      summary: Creates a new source
+      description: Creates a new source
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SourceInfo'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+
+  /api/v1/source/{sourceId}:
+    get:
+      tags:
+        - source
+      summary: Gets single source 
+      description: Gets a single source 
+      operationId: getsourceById
+      parameters:
+        - name: sourceId
+          in: path
+          description: ID of source to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SourceInfo'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+    delete:
+      tags:
+        - source
+      summary: Deletes single source 
+      description: Deletes a single source 
+      operationId: deletesourceById
+      parameters:
+        - name: sourceId
+          in: path
+          description: ID of source to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SourceInfo'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+    patch:
+      tags:
+        - source
+      summary: Patch single source 
+      description: Patch a single source 
+      operationId: patchsourceById
+      parameters:
+        - name: sourceId
+          in: path
+          description: ID of source to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SourceInfo'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+     
+  /api/v1/user:
+    post:
+      tags:
+        - user
+      description: 'Creates a new user'
+      summary: Creates a new user
+      requestBody:
+        content:
+          application/json:
+            schema: 
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+                idRole:
+                  type: integer
+                Role:
+                  type: string
+              required:
+                - name
+                - email
+                - password
+                - idRole
+                - Role
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StatusOK'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+
+
+                
+  /api/v1/user/{userId}:
+    patch:
+      tags:
+        - user
+      parameters:
+        - name: userId
+          in: path
+          description: ID of user to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type:  object
+              properties:
+                role: 
+                  type: integer
+              required:
+                - id
+      description: 'Patch single user'
+      summary: Patch single user
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StatusOK'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+
+    delete:
+      tags:
+        - user
+      parameters:
+        - name: userId
+          in: path
+          description: ID of user to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      description: 'Deletes single user'
+      summary: Delete single user
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StatusOK'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+                
+
+    get:
+      tags:
+        - user
+      parameters:
+        - name: userId
+          in: path
+          description: ID of user to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      description: 'Gets single user by id'
+      summary: Gets single user by id
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StatusOK'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+                
+  /api/v1/user/login:
+    get:
+      tags:
+        - user
+      operationId: loginUser
+      parameters:
+        - name: username
+          in: query
+          description: The user name for login
+          required: false
+          schema:
+            type: string
+        - name: password
+          in: query
+          description: The password for login in clear text
+          required: false
+          schema:
+            type: string
+      description: 'authenticate'
+      summary: log into the system and get jwt token
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StatusOK'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+                
+  /api/v1/user/logout:
+    get:
+      tags:
+        - user
+      summary: Logs out current logged in user session
+      description: ''
+      operationId: logoutUser
+      parameters: []
+      responses:
+        default:
+          description: successful operation
+          
+  /user/createWithList:
+    post:
+      tags:
+        - user
+      summary: Creates list of users with given input array
+      description: 'Creates list of users with given input array'
+      x-swagger-router-controller: UserController
+      operationId: createUsersWithListInput
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/AuthUser'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthUser'
+        default:
+          description: successful operation
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/AuthUser'
+                
+                
+
+
+ 
+components:
+  schemas:
+    StockByDate:
+      type: object
+      properties:
+        id:
+          type: integer
+        ticketId:
+          $ref: '#/components/schemas/StockInfo'
+        minPrice:
+          type: number
+        avgPrice:
+          type: number
+        maxPrice:
+          type: number
+        forecastDate:
+          type: string
+          format: date
+        createdAt:
+          type: string
+          format: date
+        updatedAt:
+          type: string
+          format: date-time
+        outdatedStatus:
+          type: boolean
+        finalAccuracy:
+          type: number
+ 
+    StockInfo:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        ticket:
+          type: string
+        sourceId: 
+          $ref: '#/components/schemas/SourceInfo'
+ 
+    SourceInfo:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        rating:
+          type: number
+ 
+    AuthUser:
+      type: object
+      properties:
+        id:
+          type: integer
+        Name:
+          type: string
+        Email:
+          type: string
+        Password:
+          type: string
+        IdRole:
+          type: integer
+        Role:
+          type: string
+ 
+    AuthUserGroups:
+      type: object
+      properties:
+        id:
+          type: integer
+        userId:
+          type: integer
+        groupId:
+          type: integer
+ 
+    AuthGroupPermissions:
+      type: object
+      properties:
+        id:
+          type: integer
+        permissionId:
+          type: integer
+        groupId:
+          type: integer
+ 
+    AuthPermissions:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        contentTypeId:
+          type: integer
+        codename:
+          type: string
+ 
+    ContentType:
+      type: object
+      properties:
+        id:
+          type: integer
+        model:
+          type: string
+ 
+    StatusOK:
+      type: object
+      properties:
+        status:
+          type: string
+          example: 200
+        message:
+          type: string
+          example: StatusOK
+ 
+    BadRequest:
+      type: object
+      properties:
+        status:
+          type: string
+          example: 400
+        message:
+          type: string
+          example: Bad request
+ 
+    InternalServerError:
+      type: object
+      properties:
+        status:
+          type: string
+          example: 500
+        message:
+          type: string
+          example: Internal server error

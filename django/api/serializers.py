@@ -1,21 +1,32 @@
 from rest_framework import serializers
-from stock.models import StockByDate, StockInfo, SourceInfo
+from stock.models import *
+from users.models import *
 
 class StockByDateSerializer(serializers.ModelSerializer):
     class Meta:
         model = StockByDate
-        fields = ('ticket_id', 'min_price', 'avg_price', 'max_price',
-         'forecast_date', 'created_at', 'updated_at',
-          'outdated_status', 'final_accuracy')
+        fields = '__all__'
 
 
 class StockInfoSerializer(serializers.ModelSerializer):
     class Meta:
         model = StockInfo
-        fields = ('name', 'ticket', 'source_id')
+        fields = '__all__'
 
 
 class SourceInfoSerializer(serializers.ModelSerializer):
     class Meta:
         model = SourceInfo
-        fields = ('name', 'rating')
+        fields = '__all__'
+
+class CustomUserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CustomUser
+        fields = '__all__'
+        
+class CreateUserSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = CustomUser
+        fields = ['email', 'role', 'login', 'password']
+        extra_kwargs = {'password': {'write_only': True}}

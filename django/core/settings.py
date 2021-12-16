@@ -47,7 +47,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'stock',
+    'users',
     'django.db.backends.postgresql',
+    'drf_yasg',
     'rest_framework',
     'api',
     'corsheaders',
@@ -96,7 +98,40 @@ DATABASES = {
         'PASSWORD': get_config('DB_PASSWORD'),
         'HOST': get_config('DB_HOST'),
         'PORT': '',
-    }
+    },
+    'guest_role_connect': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': get_config('DB_NAME'),
+        'USER': get_config('DB_USER'),
+        'PASSWORD': get_config('DB_PASSWORD'),
+        'HOST': get_config('DB_HOST'),
+        'PORT': '',
+    },
+    'user_role_connect': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': get_config('DB_NAME'),
+        'USER': get_config('DB_USER'),
+        'PASSWORD': get_config('DB_PASSWORD'),
+        'HOST': get_config('DB_HOST'),
+        'PORT': '',
+    },
+    'specialist_role_connect': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': get_config('DB_NAME'),
+        'USER': get_config('DB_USER'),
+        'PASSWORD': get_config('DB_PASSWORD'),
+        'HOST': get_config('DB_HOST'),
+        'PORT': '',
+    },
+    'admin_role_connect': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': get_config('DB_NAME'),
+        'USER': get_config('DB_USER'),
+        'PASSWORD': get_config('DB_PASSWORD'),
+        'HOST': get_config('DB_HOST'),
+        'PORT': '',
+    },
+    
 }
 
 
@@ -118,6 +153,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'users.CustomUser'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
