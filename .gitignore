@@ -1,2 +1,2 @@
 /django/core/config.json
-/react/stockapi/node_modules
+.env

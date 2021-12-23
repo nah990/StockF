@@ -5,7 +5,7 @@ def get_role(request):
     is_user = False
     specialist = None
     is_specialist = False
-    is_admin = False
+    is_superuser = False
     admin = None
     is_guest = True
     user = None
@@ -19,14 +19,14 @@ def get_role(request):
             is_specialist = True
             is_guest = False
         elif user.role == 2:
-            is_admin = True
+            is_superuser = True
             is_guest = False
 
     return is_user, is_specialist,\
-            is_admin, is_guest, \
+            is_superuser, is_guest, \
             CustomUserSerializer(user).data
 
 def get_role_json(request):
-    is_user, is_specialist, is_admin, is_guest, user = get_role(request)
+    is_user, is_specialist, is_superuser, is_guest, user = get_role(request)
     return {'is_user': is_user, 'is_specialist': is_specialist, 
-            'is_admin': is_admin, 'is_guest': is_guest, 'user': user}
+            'is_superuser': is_superuser, 'is_guest': is_guest, 'user': user}

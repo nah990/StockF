@@ -1,9 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-
-
-{/*import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Posts from './components/Posts';
 import PostLoadingComponent from './components/PostLoading';
@@ -17,7 +12,7 @@ function App() {
 
 	useEffect(() => {
 		setAppState({ loading: true });
-		const apiUrl = `http://127.0.0.1:8000/api/stock/`;
+		const apiUrl = `http://127.0.0.1/api/`;
 		fetch(apiUrl)
 			.then((data) => data.json())
 			.then((posts) => {
@@ -32,4 +27,3 @@ function App() {
 	);
 }
 export default App;
-*/}

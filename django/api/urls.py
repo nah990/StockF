@@ -13,12 +13,14 @@ schema_view = get_schema_view(
       contact=openapi.Contact(email="contact@snippets.local"),
       license=openapi.License(name="BSD License"),
    ),
+   url='http://127.0.0.1:8000/', # Important bit
    public=True,
    permission_classes=(permissions.AllowAny,),
 )
 
 urlpatterns = [
     re_path(r'^$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('swagger/',schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     #stock by date urls
     path('stock/<int:pk>', views.StockByDateApiView.as_view(), name = 'stock'),
     path('stock/', views.StockByDateCreateApiView.as_view(), name = 'stock'),

@@ -24,7 +24,7 @@ class StockByDateApiView(APIView):
 
     def delete(self, request, *args, **kwargs):
         role = get_role_json(request)
-        if not role['is_specialist'] or not role['is_admin']:
+        if not role['is_specialist'] or not role['is_superuser']:
             return JsonResponse({'status':'false','message':'You do not have rights to get the information'}, status=403)
         pk = kwargs['pk']
         flag = StockByDateService.read_filtered(request.user, {"pk": pk})
@@ -37,7 +37,7 @@ class StockByDateApiView(APIView):
 
     def patch(self, request, *args, **kwargs):
         role = get_role_json(request)
-        if not role['is_specialist'] or not role['is_admin']:
+        if not role['is_specialist'] or not role['is_superuser']:
             return JsonResponse({'status':'false','message':'You do not have rights to get the information'}, status=403)
         pk = kwargs['pk']
         flag = StockByDateService.read_filtered(request.user, {"pk": pk})
@@ -79,7 +79,7 @@ class StockInfoApiView(APIView):
 
     def delete(self, request, *args, **kwargs):
         role = get_role_json(request)
-        if not role['is_specialist'] or not role['is_admin']:
+        if not role['is_specialist'] or not role['is_superuser']:
             return JsonResponse({'status':'false','message':'You do not have rights to get the information'}, status=403)
         pk = kwargs['pk']
         flag = StockInfoService.read_filtered(request.user, {"pk": pk})
@@ -92,7 +92,7 @@ class StockInfoApiView(APIView):
 
     def patch(self, request, *args, **kwargs):
         role = get_role_json(request)
-        if not role['is_specialist'] or not role['is_admin']:
+        if not role['is_specialist'] or not role['is_superuser']:
             return JsonResponse({'status':'false','message':'You do not have rights to get the information'}, status=403)
         pk = kwargs['pk']
         flag = StockInfoService.read_filtered(request.user, {"pk": pk})
@@ -125,7 +125,7 @@ class SourceInfoApiView(APIView):
 
     def delete(self, request, *args, **kwargs):
         role = get_role_json(request)
-        if not role['is_specialist'] or not role['is_admin']:
+        if not role['is_specialist'] or not role['is_superuser']:
             return JsonResponse({'status':'false','message':'You do not have rights to get the information'}, status=403)
         pk = kwargs['pk']
         flag = SourceInfoService.read_filtered(request.user, {"pk": pk})
@@ -138,7 +138,7 @@ class SourceInfoApiView(APIView):
 
     def patch(self, request, *args, **kwargs):
         role = get_role_json(request)
-        if not role['is_specialist'] or not role['is_admin']:
+        if not role['is_specialist'] or not role['is_superuser']:
             return JsonResponse({'status':'false','message':'You do not have rights to get the information'}, status=403)
         pk = kwargs['pk']
         flag = SourceInfoService.read_filtered(request.user, {"pk": pk})
@@ -184,7 +184,7 @@ class CustomUserApiView(APIView):
 
     def delete(self, request, *args, **kwargs):
         role = get_role_json(request)
-        if not role['is_specialist'] or not role['is_admin']:
+        if not role['is_specialist'] or not role['is_superuser']:
             return JsonResponse({'status':'false','message':'You do not have rights to get the information'}, status=403)
         pk = kwargs['pk']
         flag = CustomUserService.read_filtered(request.user, {"pk": pk})
@@ -197,7 +197,7 @@ class CustomUserApiView(APIView):
 
     def patch(self, request, *args, **kwargs):
         role = get_role_json(request)
-        if not role['is_specialist'] or not role['is_admin']:
+        if not role['is_specialist'] or not role['is_superuser']:
             return JsonResponse({'status':'false','message':'You do not have rights to get the information'}, status=403)
         pk = kwargs['pk']
         flag = CustomUserService.read_filtered(request.user, {"pk": pk})
