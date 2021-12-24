@@ -34,7 +34,7 @@ SECRET_KEY = get_config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -97,7 +97,7 @@ DATABASES = {
         'USER': get_config('DB_USER'),
         'PASSWORD': get_config('DB_PASSWORD'),
         'HOST': get_config('DB_HOST'),
-        'PORT': '',
+        'PORT': '5432',
     },
     'guest_role_connect': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -105,7 +105,7 @@ DATABASES = {
         'USER': get_config('DB_USER'),
         'PASSWORD': get_config('DB_PASSWORD'),
         'HOST': get_config('DB_HOST'),
-        'PORT': '',
+        'PORT': '5432',
     },
     'user_role_connect': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -113,7 +113,7 @@ DATABASES = {
         'USER': get_config('DB_USER'),
         'PASSWORD': get_config('DB_PASSWORD'),
         'HOST': get_config('DB_HOST'),
-        'PORT': '',
+        'PORT': '5432',
     },
     'specialist_role_connect': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -121,7 +121,7 @@ DATABASES = {
         'USER': get_config('DB_USER'),
         'PASSWORD': get_config('DB_PASSWORD'),
         'HOST': get_config('DB_HOST'),
-        'PORT': '',
+        'PORT': '5432',
     },
     'admin_role_connect': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -129,7 +129,7 @@ DATABASES = {
         'USER': get_config('DB_USER'),
         'PASSWORD': get_config('DB_PASSWORD'),
         'HOST': get_config('DB_HOST'),
-        'PORT': '',
+        'PORT': '5432',
     },
     
 }
@@ -182,8 +182,4 @@ REST_FRAMEWORK = {
     ]
 }
 
-
-CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:3000",
-    "http://localhost:3000"
-]
+CORS_ORIGIN_ALLOW_ALL = True

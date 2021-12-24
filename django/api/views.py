@@ -48,23 +48,6 @@ class StockByDateApiView(APIView):
         return JsonResponse({'status': 'Ok', 'message': 'You changed stock by date data'},
                             status=200)
 
-class StockByDateCreateApiView(APIView):
-    def post(self, request):
-        serializer = StockByDateSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
-   
-
-
-class StockByDateListCreate(generics.ListCreateAPIView):
-    queryset = StockByDate.objects.all()
-    serializer_class = StockByDateSerializer
-
-
-class StockByDateAPIView(generics.ListAPIView):
-    queryset = StockByDate.objects.all()
-    serializer_class = StockByDateSerializer
 
 class StockInfoApiView(APIView):   
 
@@ -103,14 +86,6 @@ class StockInfoApiView(APIView):
         return JsonResponse({'status': 'Ok', 'message': 'You changed stock by date data'},
                             status=200)
 
-class StockInfoListCreate(generics.ListCreateAPIView):
-    queryset = StockInfo.objects.all()
-    serializer_class = StockInfoSerializer
-
-
-class StockInfoAPIView(generics.ListAPIView):
-    queryset = StockInfo.objects.all()
-    serializer_class = StockInfoSerializer
 
 class SourceInfoApiView(APIView):   
 
@@ -150,27 +125,6 @@ class SourceInfoApiView(APIView):
                             status=200)
 
 
-class SourceInfoListCreate(generics.ListCreateAPIView):
-    queryset = SourceInfo.objects.all()
-    serializer_class = SourceInfoSerializer
-
-
-class SourceInfoAPIView(generics.ListAPIView):
-    queryset = SourceInfo.objects.all()
-    serializer_class = SourceInfoSerializer
-
-
-class CreateUserApiView(APIView):
-    permission_classes = (AllowAny,)
-
-    def post(self, request):
-        user = request.data
-        serializer = CreateUserSerializer(data=user)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
-
-
 class CustomUserApiView(APIView):   
 
     def get(self, request, *args, **kwargs):
@@ -207,3 +161,38 @@ class CustomUserApiView(APIView):
         flag.update_by_pk(request.user,pk, request.data)
         return JsonResponse({'status': 'Ok', 'message': 'You changed stock by date data'},
                             status=200)
+
+#TODO REP pattern
+class CreateUserApiView(APIView):
+    permission_classes = (AllowAny,)
+
+    def post(self, request):
+        user = request.data
+        serializer = CreateUserSerializer(data=user)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+
+class StockByDateCreateApiView(APIView):
+    def post(self, request):
+        serializer = StockByDateSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+
+class StockInfoCreateApiView(APIView):
+    def post(self, request):
+        serializer = StockInfoSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+
+class SourceInfoCreateApiView(APIView):
+    def post(self, request):
+        serializer = SourceInfoSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)

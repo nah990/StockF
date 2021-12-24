@@ -13,7 +13,6 @@ schema_view = get_schema_view(
       contact=openapi.Contact(email="contact@snippets.local"),
       license=openapi.License(name="BSD License"),
    ),
-   url='http://127.0.0.1:8000/', # Important bit
    public=True,
    permission_classes=(permissions.AllowAny,),
 )
@@ -22,17 +21,15 @@ urlpatterns = [
     re_path(r'^$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('swagger/',schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     #stock by date urls
-    path('stock/<int:pk>', views.StockByDateApiView.as_view(), name = 'stock'),
-    path('stock/', views.StockByDateCreateApiView.as_view(), name = 'stock'),
-    path('stock/list', views.StockByDateListCreate.as_view() , name = 'stock'),
+    path('stocks/<int:pk>', views.StockByDateApiView.as_view(), name = 'stock'),
+    path('stocks/', views.StockByDateCreateApiView.as_view(), name = 'stock'),
     #stock info urls
-    path('stock-info/<int:pk>', views.StockInfoApiView.as_view()),
-    path('stock-info/list', views.StockInfoListCreate.as_view() ),
+    path('stock-infos/<int:pk>', views.StockInfoApiView.as_view()),
+    path('stock-infos/', views.StockInfoCreateApiView.as_view()),
     #source urls
-    path('source/<int:pk>', views.SourceInfoApiView.as_view()),
-    path('source/list', views.SourceInfoListCreate.as_view() ),
+    path('sources/<int:pk>', views.SourceInfoApiView.as_view()),
+    path('sources/', views.SourceInfoCreateApiView.as_view()),
     #user urls
-    path('user/<int:pk>', views.CustomUserApiView.as_view()),
-    path('user/list', views.CustomUserApiView.as_view()),
-    path('user', views.CreateUserApiView.as_view()),
+    path('users/<int:pk>', views.CustomUserApiView.as_view()),
+    path('users', views.CreateUserApiView.as_view()),
 ]
