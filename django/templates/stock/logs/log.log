@@ -1,5 +1,0 @@
-172.18.0.1 - - [24/Dec/2021:10:17:16 +0000] "GET /api/swagger/index.html HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
-172.18.0.1 - - [24/Dec/2021:10:17:23 +0000] "GET /api/swagger/ HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
-172.18.0.1 - - [24/Dec/2021:10:17:54 +0000] "GET /admin HTTP/1.1" 404 178 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
-172.18.0.1 - - [24/Dec/2021:10:27:00 +0000] "GET /api/swagger/index.html HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
-172.18.0.1 - - [24/Dec/2021:10:27:05 +0000] "GET /api/stocks HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"

@@ -32,6 +32,7 @@ class DBConfigManager():
             (0, 'user_role_connect'),
             (1, 'specialist_role_connect'),
             (2, 'admin_role_connect'),
+            (2, 'default'),
         )
 
         if user.is_anonymous or user is None:

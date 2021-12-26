@@ -11,30 +11,23 @@ import os
 from decouple import config
 from unipath import Path
 from django.core.exceptions import ImproperlyConfigured
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).parent
 CORE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-with open(os.path.join(BASE_DIR, 'config.json')) as config_file:
-    config = json.load(config_file)
-
-def get_config(setting, config=config):
-    """Get secret setting or fail with ImproperlyConfigured"""
-    try:
-        return config[setting]
-    except KeyError:
-        raise ImproperlyConfigured("Set the {} setting".format(setting))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = get_config('SECRET_KEY')
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -92,44 +85,44 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': get_config('DB_NAME'),
-        'USER': get_config('DB_USER'),
-        'PASSWORD': get_config('DB_PASSWORD'),
-        'HOST': get_config('DB_HOST'),
-        'PORT': '5432',
+        "ENGINE": os.environ.get("POSTGRES_ENGINE", "django.db.backends.sqlite3"),
+        "NAME": os.environ.get("POSTGRES_DB", os.path.join(BASE_DIR , 'db.sqlite3')),
+        "USER": os.environ.get("POSTGRES_USER", "user"),
+        "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "password"),
+        "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
+        "PORT": os.environ.get("POSTGRES_PORT", "5432"),
     },
     'guest_role_connect': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': get_config('DB_NAME'),
-        'USER': get_config('DB_USER'),
-        'PASSWORD': get_config('DB_PASSWORD'),
-        'HOST': get_config('DB_HOST'),
-        'PORT': '5432',
+        "ENGINE": os.environ.get("POSTGRES_ENGINE", "django.db.backends.sqlite3"),
+        "NAME": os.environ.get("POSTGRES_DB", os.path.join(BASE_DIR , 'db.sqlite3')),
+        "USER": os.environ.get("POSTGRES_USER", "user"),
+        "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "password"),
+        "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
+        "PORT": os.environ.get("POSTGRES_PORT", "5432"),
     },
     'user_role_connect': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': get_config('DB_NAME'),
-        'USER': get_config('DB_USER'),
-        'PASSWORD': get_config('DB_PASSWORD'),
-        'HOST': get_config('DB_HOST'),
-        'PORT': '5432',
+        "ENGINE": os.environ.get("POSTGRES_ENGINE", "django.db.backends.sqlite3"),
+        "NAME": os.environ.get("POSTGRES_DB", os.path.join(BASE_DIR , 'db.sqlite3')),
+        "USER": os.environ.get("POSTGRES_USER", "user"),
+        "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "password"),
+        "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
+        "PORT": os.environ.get("POSTGRES_PORT", "5432"),
     },
     'specialist_role_connect': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': get_config('DB_NAME'),
-        'USER': get_config('DB_USER'),
-        'PASSWORD': get_config('DB_PASSWORD'),
-        'HOST': get_config('DB_HOST'),
-        'PORT': '5432',
+        "ENGINE": os.environ.get("POSTGRES_ENGINE", "django.db.backends.sqlite3"),
+        "NAME": os.environ.get("POSTGRES_DB", os.path.join(BASE_DIR , 'db.sqlite3')),
+        "USER": os.environ.get("POSTGRES_USER", "user"),
+        "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "password"),
+        "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
+        "PORT": os.environ.get("POSTGRES_PORT", "5432"),
     },
     'admin_role_connect': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': get_config('DB_NAME'),
-        'USER': get_config('DB_USER'),
-        'PASSWORD': get_config('DB_PASSWORD'),
-        'HOST': get_config('DB_HOST'),
-        'PORT': '5432',
+        "ENGINE": os.environ.get("POSTGRES_ENGINE", "django.db.backends.sqlite3"),
+        "NAME": os.environ.get("POSTGRES_DB", os.path.join(BASE_DIR , 'db.sqlite3')),
+        "USER": os.environ.get("POSTGRES_USER", "user"),
+        "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "password"),
+        "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
+        "PORT": os.environ.get("POSTGRES_PORT", "5432"),
     },
     
 }
