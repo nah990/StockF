@@ -16,4 +16,5 @@ RUN sed -i 's/\r$//g' /django/entrypoint.sh
 RUN chmod +x /django/entrypoint.sh
 
 COPY . .
+RUN python manage.py collectstatic --noinput
 ENTRYPOINT ["/django/entrypoint.sh"]
