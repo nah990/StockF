@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  backend_1:
+    build:
+      context: ./django
+    command: gunicorn core.wsgi:application --bind 0.0.0.0:8005
+    expose:
+      - 8005
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+  backend_2:
+    build:
+      context: ./django
+    command: gunicorn core.wsgi:application --bind 0.0.0.0:8006
+    expose:
+      - 8006
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+  backend_3:
+    build:
+      context: ./django
+    command: gunicorn core.wsgi:application --bind 0.0.0.0:8007
+    expose:
+      - 8007
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:14.0-alpine
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+  nginx:
+    build: ./nginx
+    ports:
+      - 1337:80
+    volumes:
+      - ./django/core/staticfiles:/var/www/django
+    depends_on:
+      - postgres
+      - backend
+      - backend_2
+      - backend_3
+  
+volumes:
+  postgres_data:
