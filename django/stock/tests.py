@@ -4,7 +4,7 @@ from users.models import CustomUser
 
 class TestRepositoryPattern(TestCase):
 
-    client_user = CustomUser(role=CustomUser.USER)
+    client_user = CustomUser(role=CustomUser.ADMIN)
     @staticmethod
     def test_user_creation_and_updating():
         user = CustomUser(
