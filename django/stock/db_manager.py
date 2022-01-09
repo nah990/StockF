@@ -35,6 +35,8 @@ class DBConfigManager():
             (2, 'default'),
         )
 
+        if 'test' in sys.argv:
+            return list(filter(lambda x: 'default' in x.lower(), self.connections))[0]
         if user.is_anonymous or user is None:
             return list(filter(lambda x: 'guest' in x.lower(), self.connections))[0]
         elif user.role is None or user.role == CustomUser.GUEST:
