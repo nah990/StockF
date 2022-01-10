@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   backend_1:
@@ -50,7 +50,7 @@ services:
       - ./django/core/staticfiles:/var/www/django
     depends_on:
       - postgres
-      - backend
+      - backend_1
       - backend_2
       - backend_3
   

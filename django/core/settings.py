@@ -60,6 +60,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'core.urls'
 TEMPLATE_DIR = os.path.join(CORE_DIR, "templates")
+FIXTURE_DIRS = os.path.join(CORE_DIR, "fixtures")
 
 TEMPLATES = [
     {
