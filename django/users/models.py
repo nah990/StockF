@@ -40,7 +40,8 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     USER = 0
     SPEACIALIST = 1
     ADMIN = 2
-    GUEST = 3
+    DEFAULT = 3
+    GUEST = 4
 
     ROLE_CHOICES = (
         (USER, 'User'),

@@ -5,8 +5,9 @@ from .repository_pattern import *
 
 class StockByDateRepository(Repository):
     @classmethod
-    def create(cls, client_user, price):
-        StockByDate.save(
+    @transaction.atomic
+    def create(cls, client_user, model):
+        model.save(
             using=cls.db_config_manager.get_connection(client_user))
 
     @classmethod
@@ -53,8 +54,9 @@ class StockByDateRepository(Repository):
 
 class StockInfoRepository(Repository):
     @classmethod
-    def create(cls, client_user, price):
-        price.save(
+    @transaction.atomic
+    def create(cls, client_user, model):
+        model.save(
             using=cls.db_config_manager.get_connection(client_user))
 
     @classmethod
@@ -101,8 +103,9 @@ class StockInfoRepository(Repository):
 
 class SourceInfoRepository(Repository):
     @classmethod
-    def create(cls, client_user, price):
-        price.save(
+    @transaction.atomic
+    def create(cls, client_user, model):
+        model.save(
             using=cls.db_config_manager.get_connection(client_user))
 
     @classmethod
@@ -150,6 +153,7 @@ class SourceInfoRepository(Repository):
 class CustomUserRepository(Repository):
 
     @classmethod
+    @transaction.atomic
     def create(cls, client_user, user):
         user.save(using=cls.db_config_manager.get_connection(client_user))
 
