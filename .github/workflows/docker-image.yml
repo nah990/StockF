@@ -1,0 +1,45 @@
+name: Django CI/CD Workflow
+
+
+on:
+  pull_request:
+    branches:
+      - dev2
+      - main
+
+  push:
+    branches:
+      - main
+      - dev2
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 4
+      matrix:
+        python-version: [3.9.5]
+        
+    steps:
+    - uses: actions/checkout@v2.4.0
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2.3.1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - uses: actions/checkout@v2.4.0
+    - name: Build the images and start the containers
+      run: |
+        sudo docker-compose --profile solo-backend up -d --build
+    - name: Run tests
+      working-directory: django
+      run: |
+          python manage.py test
+      env:
+        DEBUG: 1
+        ALLOWED_HOSTS: localhost
+        GITHUB_WORKFLOW: True
+        MODE: workflow
+    - name: Stop containers
+      if: always()
+      run: docker-compose -f "docker-compose.yml" down
