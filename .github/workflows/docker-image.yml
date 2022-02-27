@@ -35,7 +35,7 @@ jobs:
     - name: Run tests
       working-directory: django
       run: |
-        docker-compose exec -T stockf_backend_1_1 python manage.py test
+        docker-compose exec stockf_backend_1_1 python manage.py test
     - name: Stop containers
       if: always()
       run: docker-compose -f "docker-compose.yml" down
