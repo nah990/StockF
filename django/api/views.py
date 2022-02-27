@@ -162,7 +162,18 @@ class CustomUserApiView(APIView):
         return JsonResponse({'status': 'Ok', 'message': 'You changed stock by date data'},
                             status=200)
 
-#TODO REP pattern
+
+
+
+
+
+
+
+
+
+
+
+
 class CreateUserApiView(APIView):
     permission_classes = (AllowAny,)
 

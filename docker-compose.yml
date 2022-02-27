@@ -12,19 +12,34 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+
+  pgadmin:
+    container_name: pgadmin4_container
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: fire990g@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
   backend_1:
     build:
       context: ./django
     command: gunicorn core.wsgi:application --bind 0.0.0.0:8005
     expose:
       - 8005
-    volumes:
-      - ./django/core/staticfiles:/var/www/django
     env_file:
       - .env
     depends_on:
       - postgres
+
   backend_2:
+    profiles:
+      - multi-backend
     build:
       context: ./django
     command: gunicorn core.wsgi:application --bind 0.0.0.0:8006
@@ -34,7 +49,10 @@ services:
       - .env
     depends_on:
       - postgres
+
   backend_3:
+    profiles:
+      - multi-backend
     build:
       context: ./django
     command: gunicorn core.wsgi:application --bind 0.0.0.0:8007
@@ -44,17 +62,60 @@ services:
       - .env
     depends_on:
       - postgres
+
+  blog:
+    build:
+      context: ./blog
+    command: gunicorn core.wsgi:application --bind 0.0.0.0:8000
+    expose:
+      - 8000
+    env_file:
+      - .env
+
+  frontend:
+    build:
+      context: ./react/stockapi
+    ports:
+      - 3000:3000
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: npm start
+    depends_on:
+      - backend_1
+
   nginx:
-    build: ./nginx
+    profiles:
+      - solo-backend
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile.solo
     ports:
       - 1337:80
-    volumes:
-      - ./django/core/staticfiles:/var/www/django
+      - 80:8080
+    depends_on:
+      - postgres
+      - backend_1
+      - blog
+      - frontend
+
+  nginx-multi:
+    profiles:
+      - multi-backend
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile.multi
+    ports:
+      - 1337:80
+      - 80:8080
     depends_on:
       - postgres
       - backend_1
       - backend_2
       - backend_3
+      - blog
+      - frontend
   
 volumes:
   postgres_data:
+
