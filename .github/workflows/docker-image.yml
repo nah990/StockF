@@ -32,9 +32,7 @@ jobs:
       run: |
         export GITHUB_WORKFLOW=True
         export MODE="Test"
-        docker-compose --profile solo-backend -f docker-compose.yml build
-        docker-compose --profile solo-backend -f docker-compose.yml up -d
-        # run: docker-compose up -d --build
+        docker-compose --profile solo-backend up -d --build
     - name: Run tests
       working-directory: django
       run: |
