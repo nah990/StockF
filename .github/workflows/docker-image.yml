@@ -30,9 +30,7 @@ jobs:
     - uses: actions/checkout@v2.4.0
     - name: Build the images and start the containers
       run: |
-        export GITHUB_WORKFLOW=True
-        export MODE="Test"
-        docker-compose --profile solo-backend up -d --build
+        sudo docker-compose --profile solo-backend up -d --build
     - name: Run tests
       working-directory: django
       run: |
