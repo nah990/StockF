@@ -30,7 +30,8 @@ jobs:
     - uses: actions/checkout@v2.4.0
     - name: Build the images and start the containers
       run: |
-        sudo docker-compose --profile solo-backend up -d --build
+        chmod +x /django/entrypoint.sh
+        docker-compose --profile solo-backend up -d --build
     - name: Run tests
       working-directory: django
       run: |
