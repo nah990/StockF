@@ -1,0 +1,2839 @@
+[
+    
+    {   
+        "model": "stock.SourceInfo",
+        "pk": 1,
+        "fields": {
+          "name": "govcapital",
+          "rating": 70
+        }
+      },
+      {
+          "model": "stock.SourceInfo",
+          "pk": 2,
+          "fields": {
+            "name": "leoprophet",
+            "rating": 80
+          }
+      },
+    {
+        "model": "stock.StockInfo",
+        "pk": 1,
+        "fields": {
+          "name": "Virgin Galactic",
+          "ticket": "spce",
+          "source_id": 1
+        }
+      },
+      {
+          "model": "stock.StockInfo",
+          "pk": 2,
+          "fields": {
+            "name": "Virgin Galactic",
+            "ticket": "spce",
+            "source_id": 2
+          }
+      },
+    {   
+        "model": "stock.StockByDate",
+        "pk": 0,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.9183",
+            "avg_price": "15.198",
+            "max_price": "17.4777",
+            "forecast_date": "2022-03-01",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },
+    {
+        "model": "stock.StockByDate",
+        "pk": 1,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "13.0577",
+            "avg_price": "15.362",
+            "max_price": "17.6663",
+            "forecast_date": "2022-03-02",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 2,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.90555",
+            "avg_price": "15.183",
+            "max_price": "17.46045",
+            "forecast_date": "2022-03-03",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 3,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.903",
+            "avg_price": "15.18",
+            "max_price": "17.457",
+            "forecast_date": "2022-03-04",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 4,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.62845",
+            "avg_price": "14.857",
+            "max_price": "17.08555",
+            "forecast_date": "2022-03-05",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 5,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.7551",
+            "avg_price": "15.006",
+            "max_price": "17.2569",
+            "forecast_date": "2022-03-06",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 6,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.72535",
+            "avg_price": "14.971",
+            "max_price": "17.21665",
+            "forecast_date": "2022-03-07",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 7,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.66755",
+            "avg_price": "14.903",
+            "max_price": "17.13845",
+            "forecast_date": "2022-03-08",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 8,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.20005",
+            "avg_price": "14.353",
+            "max_price": "16.50595",
+            "forecast_date": "2022-03-09",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 9,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.3471",
+            "avg_price": "14.526",
+            "max_price": "16.7049",
+            "forecast_date": "2022-03-10",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 10,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.3709",
+            "avg_price": "14.554",
+            "max_price": "16.7371",
+            "forecast_date": "2022-03-11",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 11,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.02325",
+            "avg_price": "14.145",
+            "max_price": "16.26675",
+            "forecast_date": "2022-03-12",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 12,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.0326",
+            "avg_price": "14.156",
+            "max_price": "16.2794",
+            "forecast_date": "2022-03-13",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 13,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.87025",
+            "avg_price": "13.965",
+            "max_price": "16.05975",
+            "forecast_date": "2022-03-14",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 14,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.5906",
+            "avg_price": "13.636",
+            "max_price": "15.6814",
+            "forecast_date": "2022-03-15",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 15,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.6654",
+            "avg_price": "13.724",
+            "max_price": "15.7826",
+            "forecast_date": "2022-03-16",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 16,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.35515",
+            "avg_price": "13.359",
+            "max_price": "15.36285",
+            "forecast_date": "2022-03-17",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 17,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.3509",
+            "avg_price": "13.354",
+            "max_price": "15.3571",
+            "forecast_date": "2022-03-18",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 18,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.4563",
+            "avg_price": "13.478",
+            "max_price": "15.4997",
+            "forecast_date": "2022-03-19",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 19,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.13075",
+            "avg_price": "13.095",
+            "max_price": "15.05925",
+            "forecast_date": "2022-03-20",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 20,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.01345",
+            "avg_price": "12.957",
+            "max_price": "14.90055",
+            "forecast_date": "2022-03-21",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 21,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.9463",
+            "avg_price": "12.878",
+            "max_price": "14.8097",
+            "forecast_date": "2022-03-22",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 22,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.97775",
+            "avg_price": "12.915",
+            "max_price": "14.85225",
+            "forecast_date": "2022-03-23",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 23,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.83155",
+            "avg_price": "12.743",
+            "max_price": "14.65445",
+            "forecast_date": "2022-03-24",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 24,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.88935",
+            "avg_price": "12.811",
+            "max_price": "14.73265",
+            "forecast_date": "2022-03-25",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 25,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.931",
+            "avg_price": "12.86",
+            "max_price": "14.789",
+            "forecast_date": "2022-03-26",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 26,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.9174",
+            "avg_price": "12.844",
+            "max_price": "14.7706",
+            "forecast_date": "2022-03-27",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 27,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.9055",
+            "avg_price": "12.83",
+            "max_price": "14.7545",
+            "forecast_date": "2022-03-28",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 28,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.9701",
+            "avg_price": "12.906",
+            "max_price": "14.8419",
+            "forecast_date": "2022-03-29",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 29,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.9684",
+            "avg_price": "12.904",
+            "max_price": "14.8396",
+            "forecast_date": "2022-03-30",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 30,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.83495",
+            "avg_price": "12.747",
+            "max_price": "14.65905",
+            "forecast_date": "2022-03-31",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 31,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.95395",
+            "avg_price": "12.887",
+            "max_price": "14.82005",
+            "forecast_date": "2022-04-01",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 32,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.6301",
+            "avg_price": "12.506",
+            "max_price": "14.3819",
+            "forecast_date": "2022-04-02",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 33,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.59185",
+            "avg_price": "12.461",
+            "max_price": "14.33015",
+            "forecast_date": "2022-04-03",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 34,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.54255",
+            "avg_price": "12.403",
+            "max_price": "14.26345",
+            "forecast_date": "2022-04-04",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 35,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.574",
+            "avg_price": "12.44",
+            "max_price": "14.306",
+            "forecast_date": "2022-04-05",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 36,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.7045",
+            "avg_price": "13.77",
+            "max_price": "15.8355",
+            "forecast_date": "2022-04-06",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 37,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.1316",
+            "avg_price": "13.096",
+            "max_price": "15.0604",
+            "forecast_date": "2022-04-07",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 38,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.22765",
+            "avg_price": "13.209",
+            "max_price": "15.19035",
+            "forecast_date": "2022-04-08",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 39,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.22765",
+            "avg_price": "13.209",
+            "max_price": "15.19035",
+            "forecast_date": "2022-04-09",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 40,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.2421",
+            "avg_price": "13.226",
+            "max_price": "15.2099",
+            "forecast_date": "2022-04-10",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 41,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.1928",
+            "avg_price": "13.168",
+            "max_price": "15.1432",
+            "forecast_date": "2022-04-11",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 42,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.30075",
+            "avg_price": "13.295",
+            "max_price": "15.28925",
+            "forecast_date": "2022-04-12",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 43,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.2625",
+            "avg_price": "13.25",
+            "max_price": "15.2375",
+            "forecast_date": "2022-04-13",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 44,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.9378",
+            "avg_price": "12.868",
+            "max_price": "14.7982",
+            "forecast_date": "2022-04-14",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 45,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.87405",
+            "avg_price": "12.793",
+            "max_price": "14.71195",
+            "forecast_date": "2022-04-15",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 46,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.812",
+            "avg_price": "12.72",
+            "max_price": "14.628",
+            "forecast_date": "2022-04-16",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 47,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.897",
+            "avg_price": "12.82",
+            "max_price": "14.743",
+            "forecast_date": "2022-04-17",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 48,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.8477",
+            "avg_price": "12.762",
+            "max_price": "14.6763",
+            "forecast_date": "2022-04-18",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 49,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "10.99135",
+            "avg_price": "12.931",
+            "max_price": "14.87065",
+            "forecast_date": "2022-04-19",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 50,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.12735",
+            "avg_price": "13.091",
+            "max_price": "15.05465",
+            "forecast_date": "2022-04-20",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 51,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.04745",
+            "avg_price": "12.997",
+            "max_price": "14.94655",
+            "forecast_date": "2022-04-21",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 52,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.17665",
+            "avg_price": "13.149",
+            "max_price": "15.12135",
+            "forecast_date": "2022-04-22",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 53,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.0245",
+            "avg_price": "12.97",
+            "max_price": "14.9155",
+            "forecast_date": "2022-04-23",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 54,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.1044",
+            "avg_price": "13.064",
+            "max_price": "15.0236",
+            "forecast_date": "2022-04-24",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 55,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.0262",
+            "avg_price": "12.972",
+            "max_price": "14.9178",
+            "forecast_date": "2022-04-25",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 56,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.06445",
+            "avg_price": "13.017",
+            "max_price": "14.96955",
+            "forecast_date": "2022-04-26",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 57,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.0415",
+            "avg_price": "12.99",
+            "max_price": "14.9385",
+            "forecast_date": "2022-04-27",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 58,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.24805",
+            "avg_price": "13.233",
+            "max_price": "15.21795",
+            "forecast_date": "2022-04-28",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 59,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.30585",
+            "avg_price": "13.301",
+            "max_price": "15.29615",
+            "forecast_date": "2022-04-29",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 60,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.36025",
+            "avg_price": "13.365",
+            "max_price": "15.36975",
+            "forecast_date": "2022-04-30",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 61,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.4036",
+            "avg_price": "13.416",
+            "max_price": "15.4284",
+            "forecast_date": "2022-05-01",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 62,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.6008",
+            "avg_price": "13.648",
+            "max_price": "15.6952",
+            "forecast_date": "2022-05-02",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 63,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.5532",
+            "avg_price": "13.592",
+            "max_price": "15.6308",
+            "forecast_date": "2022-05-03",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 64,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.7113",
+            "avg_price": "13.778",
+            "max_price": "15.8447",
+            "forecast_date": "2022-05-04",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 65,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.5634",
+            "avg_price": "13.604",
+            "max_price": "15.6446",
+            "forecast_date": "2022-05-05",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 66,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.58805",
+            "avg_price": "13.633",
+            "max_price": "15.67795",
+            "forecast_date": "2022-05-06",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 67,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.52345",
+            "avg_price": "13.557",
+            "max_price": "15.59055",
+            "forecast_date": "2022-05-07",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 68,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.5243",
+            "avg_price": "13.558",
+            "max_price": "15.5917",
+            "forecast_date": "2022-05-08",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 69,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.29395",
+            "avg_price": "13.287",
+            "max_price": "15.28005",
+            "forecast_date": "2022-05-09",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 70,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.29225",
+            "avg_price": "13.285",
+            "max_price": "15.27775",
+            "forecast_date": "2022-05-10",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 71,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.4886",
+            "avg_price": "13.516",
+            "max_price": "15.5434",
+            "forecast_date": "2022-05-11",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 72,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.62885",
+            "avg_price": "13.681",
+            "max_price": "15.73315",
+            "forecast_date": "2022-05-12",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 73,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "11.69855",
+            "avg_price": "13.763",
+            "max_price": "15.82745",
+            "forecast_date": "2022-05-13",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 74,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.7993",
+            "avg_price": "15.058",
+            "max_price": "17.3167",
+            "forecast_date": "2022-05-14",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 75,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.7653",
+            "avg_price": "15.018",
+            "max_price": "17.2707",
+            "forecast_date": "2022-05-15",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 76,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.68625",
+            "avg_price": "14.925",
+            "max_price": "17.16375",
+            "forecast_date": "2022-05-16",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 77,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.24085",
+            "avg_price": "14.401",
+            "max_price": "16.56115",
+            "forecast_date": "2022-05-17",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 78,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.3505",
+            "avg_price": "14.53",
+            "max_price": "16.7095",
+            "forecast_date": "2022-05-18",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 79,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.1584",
+            "avg_price": "14.304",
+            "max_price": "16.4496",
+            "forecast_date": "2022-05-19",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 80,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.6157",
+            "avg_price": "14.842",
+            "max_price": "17.0683",
+            "forecast_date": "2022-05-20",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 81,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.72195",
+            "avg_price": "14.967",
+            "max_price": "17.21205",
+            "forecast_date": "2022-05-21",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 82,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.7653",
+            "avg_price": "15.018",
+            "max_price": "17.2707",
+            "forecast_date": "2022-05-22",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 83,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.6769",
+            "avg_price": "14.914",
+            "max_price": "17.1511",
+            "forecast_date": "2022-05-23",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 84,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.6888",
+            "avg_price": "14.928",
+            "max_price": "17.1672",
+            "forecast_date": "2022-05-24",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 85,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.563",
+            "avg_price": "14.78",
+            "max_price": "16.997",
+            "forecast_date": "2022-05-25",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 86,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.46355",
+            "avg_price": "14.663",
+            "max_price": "16.86245",
+            "forecast_date": "2022-05-26",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 87,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.54685",
+            "avg_price": "14.761",
+            "max_price": "16.97515",
+            "forecast_date": "2022-05-27",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 88,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.59785",
+            "avg_price": "14.821",
+            "max_price": "17.04415",
+            "forecast_date": "2022-05-28",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 89,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.55705",
+            "avg_price": "14.773",
+            "max_price": "16.98895",
+            "forecast_date": "2022-05-29",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 90,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.50605",
+            "avg_price": "14.713",
+            "max_price": "16.91995",
+            "forecast_date": "2022-05-30",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 91,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.3624",
+            "avg_price": "14.544",
+            "max_price": "16.7256",
+            "forecast_date": "2022-05-31",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 92,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.3607",
+            "avg_price": "14.542",
+            "max_price": "16.7233",
+            "forecast_date": "2022-06-01",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 93,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.51965",
+            "avg_price": "14.729",
+            "max_price": "16.93835",
+            "forecast_date": "2022-06-02",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 94,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.6174",
+            "avg_price": "14.844",
+            "max_price": "17.0706",
+            "forecast_date": "2022-06-03",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 95,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.6446",
+            "avg_price": "14.876",
+            "max_price": "17.1074",
+            "forecast_date": "2022-06-04",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 96,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.57065",
+            "avg_price": "14.789",
+            "max_price": "17.00735",
+            "forecast_date": "2022-06-05",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 97,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.51965",
+            "avg_price": "14.729",
+            "max_price": "16.93835",
+            "forecast_date": "2022-06-06",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 98,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.42275",
+            "avg_price": "14.615",
+            "max_price": "16.80725",
+            "forecast_date": "2022-06-07",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 99,
+        "fields": {
+            "ticket_id": 1,
+            "min_price": "12.4168",
+            "avg_price": "14.608",
+            "max_price": "16.7992",
+            "forecast_date": "2022-06-08",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 100,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-01",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 101,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-02",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 102,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-03",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 103,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-04",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 104,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-05",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 105,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-06",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 106,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-07",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 107,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-08",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 108,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-09",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 109,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-10",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 110,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-11",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 111,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-12",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 112,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-13",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 113,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-14",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 114,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-15",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 115,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-16",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 116,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-17",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 117,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-18",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 118,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-19",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 119,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-20",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 120,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-21",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 121,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-22",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 122,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-23",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 123,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-24",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 124,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-25",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 125,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-26",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 126,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-27",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 127,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-28",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 128,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-29",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 129,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-30",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 130,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "8",
+            "avg_price": "7.31",
+            "max_price": "9.1",
+            "forecast_date": "2022-03-31",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 131,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-01",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 132,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-02",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 133,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-03",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 134,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-04",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 135,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-05",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 136,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-06",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 137,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-07",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 138,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-08",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 139,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-09",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 140,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-10",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 141,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-11",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 142,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-12",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 143,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-13",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 144,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-14",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 145,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-15",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 146,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-16",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 147,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-17",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 148,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-18",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 149,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-19",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 150,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-20",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 151,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-21",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 152,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-22",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 153,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-23",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 154,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-24",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 155,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-25",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 156,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-26",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 157,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-27",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 158,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-28",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 159,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-29",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 160,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "7",
+            "avg_price": "6.8",
+            "max_price": "8.08",
+            "forecast_date": "2022-04-30",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 161,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-01",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 162,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-02",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 163,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-03",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 164,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-04",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 165,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-05",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 166,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-06",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 167,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-07",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 168,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-08",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 169,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-09",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 170,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-10",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 171,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-11",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 172,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-12",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 173,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-13",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 174,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-14",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 175,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-15",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 176,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-16",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 177,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-17",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 178,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-18",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 179,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-19",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 180,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-20",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 181,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-21",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 182,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-22",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 183,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-23",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 184,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-24",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 185,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-25",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 186,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-26",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 187,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-27",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 188,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-28",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 189,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-29",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 190,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-30",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 191,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "6",
+            "avg_price": "6.52",
+            "max_price": "7.59",
+            "forecast_date": "2022-05-31",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 192,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "5",
+            "avg_price": "5.46",
+            "max_price": "6.63",
+            "forecast_date": "2022-06-01",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 193,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "5",
+            "avg_price": "5.46",
+            "max_price": "6.63",
+            "forecast_date": "2022-06-02",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 194,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "5",
+            "avg_price": "5.46",
+            "max_price": "6.63",
+            "forecast_date": "2022-06-03",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 195,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "5",
+            "avg_price": "5.46",
+            "max_price": "6.63",
+            "forecast_date": "2022-06-04",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 196,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "5",
+            "avg_price": "5.46",
+            "max_price": "6.63",
+            "forecast_date": "2022-06-05",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 197,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "5",
+            "avg_price": "5.46",
+            "max_price": "6.63",
+            "forecast_date": "2022-06-06",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 198,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "5",
+            "avg_price": "5.46",
+            "max_price": "6.63",
+            "forecast_date": "2022-06-07",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    },{
+        "model": "stock.StockByDate",
+        "pk": 199,
+        "fields": {
+            "ticket_id": 2,
+            "min_price": "5",
+            "avg_price": "5.46",
+            "max_price": "6.63",
+            "forecast_date": "2022-06-08",
+            "created_at": "2022-03-01",
+            "updated_at": "2022-03-01",
+            "outdated_status": false,
+            "final_accuracy": 0
+        }
+    }
+]

@@ -23,9 +23,9 @@ class StockInfo(models.Model):
 class StockByDate(models.Model):
     ticket_id = models.ForeignKey(StockInfo, related_name="stock_info_id",
                                     on_delete=models.SET_NULL, null=True)
-    min_price = models.IntegerField(null=True)
-    avg_price = models.IntegerField(null=True)
-    max_price = models.IntegerField(null=True)
+    min_price = models.FloatField(null=True)
+    avg_price = models.FloatField(null=True)
+    max_price = models.FloatField(null=True)
     forecast_date = models.DateField()
     created_at = models.DateField(auto_now_add=True)
     updated_at = models.DateTimeField(null=True)

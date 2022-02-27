@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['http://localhost:1337']
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:1337']
 
 # Application definition
 
@@ -59,8 +59,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'core.urls'
-TEMPLATE_DIR = os.path.join(CORE_DIR, "templates")
-FIXTURE_DIRS = os.path.join(CORE_DIR, "fixtures")
+TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 
 TEMPLATES = [
     {
