@@ -34,12 +34,7 @@ jobs:
     - name: Run tests
       working-directory: django
       run: |
-          python manage.py test
-      env:
-        DEBUG: 1
-        ALLOWED_HOSTS: localhost
-        GITHUB_WORKFLOW: True
-        MODE: workflow
+          docker-compose exec stockf_backend_1_1 python manage.py test
     - name: Stop containers
       if: always()
       run: docker-compose -f "docker-compose.yml" down
