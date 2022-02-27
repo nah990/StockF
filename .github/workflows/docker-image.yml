@@ -36,6 +36,10 @@ jobs:
       working-directory: django
       run: |
         docker-compose exec -T backend_1 python ./manage.py test
+    - name: Init fixture DataBase data
+      working-directory: django
+      run: |
+        docker-compose exec -T backend_1 python ./manage.py loaddata ./fixtures/models_data.json
     - name: Stop containers
       if: always()
       run: docker-compose -f "docker-compose.yml" down
