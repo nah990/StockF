@@ -74,7 +74,7 @@ class TestCustomUserRepository(TestCase):
         assert(db_user.is_superuser == True)
         assert(db_user.email == "l1234@mail.ru")
         assert(db_user.password == "secure_password")
-        assert(db_user.login == "nah")
+        assert(db_user.username == "nah")
 
     @staticmethod
     def test_admin_update():
@@ -82,11 +82,11 @@ class TestCustomUserRepository(TestCase):
 
         CustomUserRepository.create(TestCustomUserRepository.client_user, user)
 
-        CustomUserRepository.update_by_pk(TestCustomUserRepository.client_user, 1, {'email': "testing@mail.ru", 'login' : "testing"})
+        CustomUserRepository.update_by_pk(TestCustomUserRepository.client_user, 1, {'email': "testing@mail.ru", 'username' : "testing"})
         db_user = CustomUserRepository.read_by_pk(TestCustomUserRepository.client_user, 1)
 
         assert(db_user.email == "testing@mail.ru")
-        assert(db_user.login == "testing")
+        assert(db_user.username == "testing")
 
     @staticmethod
     def test_admin_delete():
@@ -109,7 +109,7 @@ class TestCustomUserRepository(TestCase):
         email = "1234@mail.ru",
         password = "secure_password",
         role = 0,
-        login = "1234qwerty"
+        username = "1234qwerty"
         )
 
         create_flag = 1
@@ -126,7 +126,7 @@ class TestCustomUserRepository(TestCase):
         email = "1234@mail.ru",
         password = "secure_password",
         role = 0,
-        login = "1234qwerty"
+        username = "1234qwerty"
         )
 
         CustomUserRepository.create(TestCustomUserRepository.client_user, user)
@@ -138,7 +138,7 @@ class TestCustomUserRepository(TestCase):
         assert(db_user.is_superuser == False)
         assert(db_user.email == "1234@mail.ru")
         assert(db_user.password == "secure_password")
-        assert(db_user.login == "1234qwerty")
+        assert(db_user.username == "1234qwerty")
 
     @staticmethod
     def test_user_update():
@@ -147,16 +147,16 @@ class TestCustomUserRepository(TestCase):
         email = "1234@mail.ru",
         password = "secure_password",
         role = 0,
-        login = "1234qwerty"
+        username = "1234qwerty"
         )
 
         CustomUserRepository.create(TestCustomUserRepository.client_user, user)
 
-        CustomUserRepository.update_by_pk(TestCustomUserRepository.client_user, 1, {'email': "updated@mail.ru", 'login' : "updated"})
+        CustomUserRepository.update_by_pk(TestCustomUserRepository.client_user, 1, {'email': "updated@mail.ru", 'username' : "updated"})
         db_user = CustomUserRepository.read_by_pk(TestCustomUserRepository.client_user, 1)
 
         assert(db_user.email == "updated@mail.ru")
-        assert(db_user.login == "updated")
+        assert(db_user.username == "updated")
 
     @staticmethod
     def test_user_delete():
@@ -165,7 +165,7 @@ class TestCustomUserRepository(TestCase):
         email = "1234@mail.ru",
         password = "secure_password",
         role = 0,
-        login = "1234qwerty"
+        username = "1234qwerty"
         )
 
         CustomUserRepository.create(TestCustomUserRepository.client_user, user)
@@ -185,7 +185,7 @@ class TestCustomUserRepository(TestCase):
         email = "test@mail.ru",
         password = "secure_password",
         role = 1,
-        login = "testqwerty",
+        username = "testqwerty",
         is_staff = True
         )
 
@@ -204,7 +204,7 @@ class TestCustomUserRepository(TestCase):
         email = "test@mail.ru",
         password = "secure_password",
         role = 1,
-        login = "testqwerty",
+        username = "testqwerty",
         is_staff = True
         )
 
@@ -218,7 +218,7 @@ class TestCustomUserRepository(TestCase):
         assert(db_user.is_superuser == False)
         assert(db_user.email == "test@mail.ru")
         assert(db_user.password == "secure_password")
-        assert(db_user.login == "testqwerty")
+        assert(db_user.username == "testqwerty")
 
 
     @staticmethod
@@ -228,17 +228,17 @@ class TestCustomUserRepository(TestCase):
         email = "test@mail.ru",
         password = "secure_password",
         role = 1,
-        login = "testqwerty",
+        username = "testqwerty",
         is_staff = True
         )
 
         CustomUserRepository.create(TestCustomUserRepository.client_user, user)
 
-        CustomUserRepository.update_by_pk(TestCustomUserRepository.client_user, 1, {'email': "changed@mail.ru", 'login' : "changed"})
+        CustomUserRepository.update_by_pk(TestCustomUserRepository.client_user, 1, {'email': "changed@mail.ru", 'username' : "changed"})
         db_user = CustomUserRepository.read_by_pk(TestCustomUserRepository.client_user, 1)
 
         assert(db_user.email == "changed@mail.ru")
-        assert(db_user.login == "changed")
+        assert(db_user.username == "changed")
 
 
     @staticmethod
@@ -248,7 +248,7 @@ class TestCustomUserRepository(TestCase):
         email = "test@mail.ru",
         password = "secure_password",
         role = 1,
-        login = "testqwerty",
+        username = "testqwerty",
         is_staff = True
         )
 

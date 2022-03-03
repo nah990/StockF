@@ -8,5 +8,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
     path('', include('stock.urls', namespace='stock')),
+    path("", include("authentication.urls")),
 ]
 

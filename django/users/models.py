@@ -51,9 +51,9 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 
 
     email = models.EmailField(verbose_name='email', unique=True)
-    login = models.CharField(verbose_name='login', max_length=40, unique=True)
+    username = models.CharField(verbose_name='username', max_length=40, unique=True)
     role = models.PositiveSmallIntegerField(verbose_name='role',
-                                            choices=ROLE_CHOICES, default=GUEST)
+                                            choices=ROLE_CHOICES, default=USER)
 
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
@@ -61,7 +61,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     is_superuser = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['role', 'login']
+    REQUIRED_FIELDS = ['role', 'username']
 
     objects = CustomUserManager()
 
