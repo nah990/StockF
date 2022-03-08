@@ -1,12 +1,22 @@
+# -*- encoding: utf-8 -*-
+
+
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
-from users.models import *
+from users.models import CustomUser
+from django.core.validators import MaxValueValidator, MinValueValidator
+
+ROLE_CHOICES = (
+        ('User', 0),
+        ('Specialist', 1),
+        ('Admin', 2)
+)
 
 class LoginForm(forms.Form):
-    username = forms.CharField(
-        widget=forms.TextInput(
+    email = forms.EmailField(
+        widget=forms.EmailInput(
             attrs={
-                "placeholder" : "username",                
+                "placeholder" : "Email",                
                 "class": "form-control"
             }
         ))
@@ -17,12 +27,12 @@ class LoginForm(forms.Form):
                 "class": "form-control"
             }
         ))
-
+        
 class SignUpForm(UserCreationForm):
-    username = forms.CharField(
+    login = forms.CharField(
         widget=forms.TextInput(
             attrs={
-                "placeholder" : "username",                
+                "placeholder" : "Username",                
                 "class": "form-control"
             }
         ))
@@ -46,8 +56,19 @@ class SignUpForm(UserCreationForm):
                 "placeholder" : "Password check",                
                 "class": "form-control"
             }
-        ))
+        ))   
+    role = forms.IntegerField(
+        widget=forms.NumberInput(
+            attrs={
+                "placeholder" : "Role",                
+                "class": "form-control"
+            }
+        ),
+        validators=[
+            MaxValueValidator(2),
+            MinValueValidator(0)
+        ])   
 
-    class Meta:
+    class Meta(UserCreationForm.Meta):
         model = CustomUser
-        fields = ('username', 'email', 'password1', 'password2')
+        fields = ('login', 'email', 'role')

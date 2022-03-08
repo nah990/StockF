@@ -38,7 +38,7 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text text-cyan"><i class="ni ni-hat-3"></i></span>
                       </div>
-                      {{ form.username }}
+                      {{ form.login }}
                     </div>
                   </div>
                   <span class="text-error">{{ form.username.errors }}</span>
@@ -73,6 +73,16 @@
                   </div>
                   <span class="text-error">{{ form.password2.errors }}</span>
 
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text text-cyan"><i class="ni ni-trophy"></i></span>
+                      </div>
+                      {{ form.role }}
+                    </div>
+                  </div>
+                  <span class="text-error">{{ form.role.errors }}</span>          
+
                   <div class="row my-4">
                     <div class="col-12">
                       <div class="custom-control custom-control-alternative custom-checkbox">
@@ -80,6 +90,7 @@
                       </div>
                     </div>
                   </div>
+                  
                   <div class="text-center">
                     <button type="submit" class="btn btn-primary mt-4">Create account</button>
                   </div>

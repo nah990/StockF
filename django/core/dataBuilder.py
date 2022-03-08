@@ -17,7 +17,7 @@ class SuperUser(UserBuilder):
             email="l1234@mail.ru",
             password="secure_password",
             role=2,
-            username="nah",
+            login="nah",
             is_staff=True,
             is_superuser=True
         )
@@ -29,7 +29,7 @@ class User(UserBuilder):
             email="l1234@mail.ru",
             password="secure_password",
             role=0,
-            username="nah"
+            login="nah"
         )
 
 class AdminUser(UserBuilder):
@@ -39,7 +39,7 @@ class AdminUser(UserBuilder):
             email="l1234@mail.ru",
             password="secure_password",
             role=2,
-            username="nah",
+            login="nah",
             is_staff=True,
             is_superuser=True
         )
@@ -51,7 +51,7 @@ class SpecialistUser(UserBuilder):
             email="l1234@mail.ru",
             password="secure_password",
             role=1,
-            username="nah",
+            login="nah",
             is_staff=True
         )
 
@@ -62,7 +62,7 @@ class DefaultUser(UserBuilder):
             email="l1234@mail.ru",
             password="secure_password",
             role=4,
-            username="nah",
+            login="nah",
             is_staff=True,
             is_superuser=True
         )
@@ -74,7 +74,7 @@ class UserBuilderByPk:
             email="l1234@mail.ru",
             password="secure_password",
             role=0,
-            username="nah"
+            login="nah"
         )
         self.user = None
         self.pk = pk

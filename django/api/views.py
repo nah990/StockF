@@ -9,8 +9,10 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework import status
 from .role import *
 from django.http import JsonResponse
+from django.contrib.auth.decorators import login_required, user_passes_test
 
 
+@login_required(login_url="/login/")
 class StockByDateApiView(APIView):   
 
     def get(self, request, *args, **kwargs):
@@ -49,6 +51,7 @@ class StockByDateApiView(APIView):
                             status=200)
 
 
+@login_required(login_url="/login/")
 class StockInfoApiView(APIView):   
 
     def get(self, request, *args, **kwargs):
@@ -87,6 +90,7 @@ class StockInfoApiView(APIView):
                             status=200)
 
 
+@login_required(login_url="/login/")
 class SourceInfoApiView(APIView):   
 
     def get(self, request, *args, **kwargs):
@@ -125,6 +129,7 @@ class SourceInfoApiView(APIView):
                             status=200)
 
 
+@login_required(login_url="/login/")
 class CustomUserApiView(APIView):   
 
     def get(self, request, *args, **kwargs):
@@ -174,6 +179,15 @@ class CustomUserApiView(APIView):
 
 
 
+
+
+
+
+
+
+
+
+@login_required(login_url="/login/")
 class CreateUserApiView(APIView):
     permission_classes = (AllowAny,)
 
@@ -185,6 +199,7 @@ class CreateUserApiView(APIView):
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
+@login_required(login_url="/login/")
 class StockByDateCreateApiView(APIView):
     def post(self, request):
         serializer = StockByDateSerializer(data=request.data)
@@ -193,6 +208,7 @@ class StockByDateCreateApiView(APIView):
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
+@login_required(login_url="/login/")
 class StockInfoCreateApiView(APIView):
     def post(self, request):
         serializer = StockInfoSerializer(data=request.data)
@@ -201,6 +217,7 @@ class StockInfoCreateApiView(APIView):
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
+@login_required(login_url="/login/")
 class SourceInfoCreateApiView(APIView):
     def post(self, request):
         serializer = SourceInfoSerializer(data=request.data)

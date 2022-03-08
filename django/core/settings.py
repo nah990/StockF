@@ -41,12 +41,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'stock',
     'users',
+    'authentication',
     'django.db.backends.postgresql',
     'drf_yasg',
     'rest_framework',
     'api',
     'corsheaders',
-    'authentication',
 ]
 
 MIDDLEWARE = [

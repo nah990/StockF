@@ -1,10 +1,15 @@
+# -*- encoding: utf-8 -*-
+
+
+import email
 from django.shortcuts import render
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
-from users.models import *
+from django.contrib.auth.models import User
 from django.forms.utils import ErrorList
 from django.http import HttpResponse
 from .forms import LoginForm, SignUpForm
+from stock.services import CustomUserService
 
 def login_view(request):
     form = LoginForm(request.POST or None)
@@ -14,11 +19,11 @@ def login_view(request):
     if request.method == "POST":
 
         if form.is_valid():
-            username = form.cleaned_data.get("username")
+            email = form.cleaned_data.get("email")
             password = form.cleaned_data.get("password")
-            CustomUser = authenticate(username=username, password=password)
-            if CustomUser is not None:
-                login(request, CustomUser)
+            user = authenticate(email=email, password=password)
+            if user is not None:
+                login(request, user)
                 return redirect("/")
             else:    
                 msg = 'Invalid credentials'    
@@ -36,9 +41,9 @@ def register_user(request):
         form = SignUpForm(request.POST)
         if form.is_valid():
             form.save()
-            username = form.cleaned_data.get("username")
-            raw_password = form.cleaned_data.get("password1")
-            CustomUser = authenticate(username=username, password=raw_password)
+            email = form.cleaned_data.get("email")
+            password = form.cleaned_data.get("password1")
+            user = authenticate(email=email, password=password)
 
             msg     = 'User created - please <a href="/login">login</a>.'
             success = True
