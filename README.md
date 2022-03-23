@@ -3,6 +3,7 @@ Simple web application for aggregating stock forecasts.
 
 * [RU Documentation on Pages](https://github.com/nah990/StockF/wiki/StockF)
 * [Current Tasks](https://github.com/nah990/StockF/projects/1?add_cards_query=is%3Aopen)
+* [Bug tracker](https://github.com/nah990/StockF/projects/2?add_cards_query=is%3Aopen)
 * [Apache Benchmark testing](APACHE.md)
 
 # Installation
