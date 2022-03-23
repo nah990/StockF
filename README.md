@@ -1,7 +1,7 @@
 # StockF
 Simple web application for aggregating stock forecasts.
 
-[RU Documentation](DOCS.md)
+[RU Documentation](https://github.com/nah990/StockF/wiki/StockF)
 [Apache Benchmark testing](APACHE.md)
 
 # Installation
