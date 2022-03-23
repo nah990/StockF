@@ -19,20 +19,20 @@
 
 __Неавторизованный пользователь__
 
-![Use-case unauth user](docs/Ru/images/use-case_unauth_user.png)
+![Use-case unauth user](https://raw.githubusercontent.com/nah990/StockF/main/docs/Ru/images/use-case_unauth_user.png)
 
 __Авторизованный пользователь__
 
-![Use-case auth user](docs/Ru/images/use-case_auth_user.png)
+![Use-case auth user](https://raw.githubusercontent.com/nah990/StockF/main/docs/Ru/images/use-case_auth_user.png)
 
 __Специалист__
 
-![Use-case specialist](docs/Ru/images/use-case_specialist.png)
+![Use-case specialist](https://raw.githubusercontent.com/nah990/StockF/main/docs/Ru/images/use-case_specialist.png)
 
 __Администратор__
 
-![Use-case admin](docs/Ru/images/use-case_admin.png)
+![Use-case admin](https://raw.githubusercontent.com/nah990/StockF/main/docs/Ru/images/use-case_admin.png)
 
 ## ER-диаграмма сущностей
 
-![ER-диаграмма сущностей](docs/Ru/images/ER-diagram.png)
+![ER-диаграмма сущностей](https://raw.githubusercontent.com/nah990/StockF/main/docs/Ru/images/ER-diagram.png)
