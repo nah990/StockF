@@ -31,16 +31,15 @@ jobs:
     - name: Build the images and start the containers
       run: |
         chmod +x ./django/entrypoint.sh
-        docker-compose --profile solo-backend up -d --build
+        sudo docker-compose --profile solo-backend up -d --build
     - name: Run tests
       working-directory: django
       run: |
-          python manage.py test
-      env:
-        DEBUG: 1
-        ALLOWED_HOSTS: localhost
-        GITHUB_WORKFLOW: True
-        MODE: workflow
+        docker-compose exec -T backend_1 python ./manage.py test
+    - name: Init fixture DataBase data
+      working-directory: django
+      run: |
+        docker-compose exec -T backend_1 python ./manage.py loaddata ./fixtures/models_data.json
     - name: Stop containers
       if: always()
       run: docker-compose -f "docker-compose.yml" down

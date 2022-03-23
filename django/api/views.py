@@ -9,6 +9,8 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework import status
 from .role import *
 from django.http import JsonResponse
+from django.contrib.auth.decorators import login_required, user_passes_test
+
 
 
 class StockByDateApiView(APIView):   
@@ -49,6 +51,7 @@ class StockByDateApiView(APIView):
                             status=200)
 
 
+
 class StockInfoApiView(APIView):   
 
     def get(self, request, *args, **kwargs):
@@ -87,6 +90,7 @@ class StockInfoApiView(APIView):
                             status=200)
 
 
+
 class SourceInfoApiView(APIView):   
 
     def get(self, request, *args, **kwargs):
@@ -123,6 +127,7 @@ class SourceInfoApiView(APIView):
         flag.update_by_pk(request.user,pk, request.data)
         return JsonResponse({'status': 'Ok', 'message': 'You changed stock by date data'},
                             status=200)
+
 
 
 class CustomUserApiView(APIView):   
@@ -174,6 +179,15 @@ class CustomUserApiView(APIView):
 
 
 
+
+
+
+
+
+
+
+
+
 class CreateUserApiView(APIView):
     permission_classes = (AllowAny,)
 
@@ -185,6 +199,7 @@ class CreateUserApiView(APIView):
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
+
 class StockByDateCreateApiView(APIView):
     def post(self, request):
         serializer = StockByDateSerializer(data=request.data)
@@ -193,12 +208,14 @@ class StockByDateCreateApiView(APIView):
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
+
 class StockInfoCreateApiView(APIView):
     def post(self, request):
         serializer = StockInfoSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
+
 
 
 class SourceInfoCreateApiView(APIView):
